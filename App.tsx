@@ -1,6 +1,7 @@
 import { Home } from "./src/screens/home";
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from "@expo-google-fonts/roboto";
 import AppLoading from "expo-app-loading";
+import { StatusBar } from "expo-status-bar";
 
 
 export default function App() {
@@ -9,6 +10,9 @@ export default function App() {
   if (!fontLoaded) { return <AppLoading /> }
 
   return (
-    <Home />
+    <>
+      <StatusBar style="light"/>
+      <Home />
+    </>
   );
 }
