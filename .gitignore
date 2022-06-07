@@ -2,8 +2,16 @@ dist
 build
 coverage
 node_modules
-DS_Store
 **.log
 **.env
 **.txt
 notes.md
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+.DS_Store
+web-build/
