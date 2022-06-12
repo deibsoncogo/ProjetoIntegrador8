@@ -1,11 +1,11 @@
 import { StyleSheet } from "react-native";
 import { color } from "../../theme";
+import { getStatusBarHeight } from "react-native-iphone-x-helper";
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: color.blackSecondary,
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+    backgroundColor: color.blackSecondary,
+    paddingTop: getStatusBarHeight(),
   }
 })
