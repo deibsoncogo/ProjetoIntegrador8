@@ -1,12 +1,12 @@
 import React from "react"
 import { Text, TouchableOpacity, View } from "react-native"
 import { styles } from "./styles"
-import Logo from "../../assets/logo.svg";
+import Logomarca from "../../assets/logomarca.svg";
 
 export function Header() {
   return (
     <View style={styles.container}>
-      <Logo width={150} height={150}/>
+      <Logomarca width={150} height={150}/>
 
       <TouchableOpacity>
         <Text style={styles.logoutText}>Menu</Text>
@@ -14,5 +14,3 @@ export function Header() {
     </View>
   )
 }
-
-// 41:49
