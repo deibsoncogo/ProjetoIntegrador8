@@ -1,9 +1,13 @@
 export const color = {
-  white: '#FFFFFF',
   green: '#1B873F',
   pink: '#FF008E',
   orange: '#FF7A29',
   yellow: '#FFCD1E',
+
+  whitePrimary: '#FFFFFF',
+  whiteSecondary: '#F9F9F9',
+  whiteTertiary: '#F1F1F1',
+
 
   blackPrimary: '#09090A',
   blackSecondary: '#121214',

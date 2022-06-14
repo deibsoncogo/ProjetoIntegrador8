@@ -9,11 +9,11 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     paddingHorizontal: 10,
-    backgroundColor: color.blackTertiary
+    backgroundColor: color.whiteTertiary
   },
 
   logoutText: {
     fontSize: 15,
-    color: color.white,
+    color: color.blackTertiary,
   }
 })
