@@ -15,5 +15,11 @@ export const styles = StyleSheet.create({
   logoutText: {
     fontSize: 15,
     color: color.blackTertiary,
+    marginRight: 10
+  },
+
+  menu: {
+    display: "flex",
+    flexDirection: "row"
   }
 })

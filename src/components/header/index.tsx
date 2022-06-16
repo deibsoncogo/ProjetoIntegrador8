@@ -8,9 +8,20 @@ export function Header() {
     <View style={styles.container}>
       <Logomarca width={150} height={150}/>
 
-      <TouchableOpacity>
-        <Text style={styles.logoutText}>Menu</Text>
-      </TouchableOpacity>
+
+      <View style={styles.menu}>
+        <TouchableOpacity>
+          <Text style={styles.logoutText}>Home</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity>
+          <Text style={styles.logoutText}>Paciente</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity>
+          <Text style={styles.logoutText}>Doença</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   )
 }
