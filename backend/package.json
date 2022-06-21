@@ -1,0 +1,10 @@
+{
+  "name": "projetointegrador8backend",
+  "version": "1.0.0",
+  "description": "Criação do backend para o projeto integrador 8",
+  "main": "index.js",
+  "repository": "git@github.com:deibsoncogo/ProjetoIntegrador8.git",
+  "author": "Deibson Cogo <deibsoncogo@outlook.com>",
+  "license": "MIT",
+  "private": true
+}
