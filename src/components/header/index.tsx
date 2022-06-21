@@ -1,7 +1,7 @@
 import React from "react"
 import { Text, TouchableOpacity, View } from "react-native"
+import Logomarca from "../../assets/logomarca.svg"
 import { styles } from "./styles"
-import Logomarca from "../../assets/logomarca.svg";
 
 export function Header() {
   return (

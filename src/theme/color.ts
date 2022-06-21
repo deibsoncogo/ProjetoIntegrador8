@@ -3,6 +3,7 @@ export const color = {
   pink: '#FF008E',
   orange: '#FF7A29',
   yellow: '#FFCD1E',
+  blue: '#1292EE',
 
   whitePrimary: '#FFFFFF',
   whiteSecondary: '#F9F9F9',

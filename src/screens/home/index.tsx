@@ -1,14 +1,14 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import { styles } from "./styles";
-import { Header } from "../../components/header";
+import { View } from 'react-native'
+import { Header } from '../../components/header'
+import { Patient } from '../../components/patient'
+import { styles } from './styles'
 
 export function Home() {
   return (
     <View style={styles.container}>
       <Header />
-
-      <Text>Olá Projeto Integrador 8</Text>
+      <Patient />
     </View>
   )
 }
