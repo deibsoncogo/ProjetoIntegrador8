@@ -19,3 +19,11 @@ model Patients {
   created_at DateTime @default(now())
   updated_at DateTime @default(now()) @updatedAt()
 }
+
+model Illnesses {
+  id         String   @id @default(uuid())
+  name       String   @unique
+  quarantine Int
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now()) @updatedAt()
+}
