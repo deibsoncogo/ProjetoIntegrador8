@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  database:
+    container_name: DatabaseProjetoIntegrador8Univesp
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=ProjetoIntegrador8Univesp
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=ProjetoIntegrador8UnivespDB
