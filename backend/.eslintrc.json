@@ -1,5 +1,6 @@
 {
   "rules": {
+    "import/no-extraneous-dependencies": "off",
     "class-methods-use-this": "off",
     "no-useless-constructor": "off",
     "semi": ["error", "never"], // proíbe o uso de ponto e virgula

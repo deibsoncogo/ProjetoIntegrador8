@@ -8,6 +8,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "db": "yarn db:reset -f && yarn db:run && yarn start:dev",
+    "db:reset": "prisma migrate reset -f",
+    "db:run": "prisma migrate dev",
+    "db:view": "prisma studio",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "start": "nest start",
