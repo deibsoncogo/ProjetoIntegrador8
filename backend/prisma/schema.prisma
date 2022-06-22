@@ -6,3 +6,16 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Patients {
+  id         String   @id @default(uuid())
+  name       String
+  birth_date String
+  cpf        String   @unique
+  rg         String   @unique
+  telephone  String
+  district   String
+  city       String
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now()) @updatedAt()
+}
