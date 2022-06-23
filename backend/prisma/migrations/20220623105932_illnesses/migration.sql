@@ -2,7 +2,9 @@
 CREATE TABLE "Illnesses" (
     "id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
-    "quarantine" INTEGER NOT NULL,
+    "prevention" TEXT NOT NULL,
+    "recovery" INTEGER NOT NULL,
+    "isQuarantine" BOOLEAN NOT NULL,
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 

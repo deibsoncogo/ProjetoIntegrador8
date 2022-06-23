@@ -5,7 +5,11 @@ export class IllnessEntity implements Illnesses {
 
   name: string
 
-  quarantine: number
+  prevention: string
+
+  recovery: number
+
+  isQuarantine: boolean
 
   created_at: Date
 

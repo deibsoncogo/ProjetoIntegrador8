@@ -1,5 +1,9 @@
 export class UpSertIllnessDto {
   name: string
 
-  quarantine: number
+  prevention: string
+
+  recovery: number
+
+  isQuarantine: boolean
 }
