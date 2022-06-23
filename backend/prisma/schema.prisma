@@ -8,24 +8,35 @@ datasource db {
 }
 
 model Patients {
-  id         String   @id @default(uuid())
-  name       String
-  birth_date String
-  cpf        String   @unique
-  rg         String
-  telephone  String
-  district   String
-  city       String
-  created_at DateTime @default(now())
-  updated_at DateTime @default(now()) @updatedAt()
+  id                String              @id @default(uuid())
+  name              String
+  birth_date        String
+  cpf               String              @unique
+  rg                String
+  telephone         String
+  district          String
+  city              String
+  created_at        DateTime            @default(now())
+  updated_at        DateTime            @default(now()) @updatedAt()
+  PatientsIllnesses PatientsIllnesses[]
 }
 
 model Illnesses {
-  id           String   @id @default(uuid())
-  name         String   @unique
-  prevention   String
-  recovery     Int
-  isQuarantine Boolean
-  created_at   DateTime @default(now())
-  updated_at   DateTime @default(now()) @updatedAt()
+  id                String              @id @default(uuid())
+  name              String              @unique
+  prevention        String
+  recovery          Int
+  isQuarantine      Boolean
+  created_at        DateTime            @default(now())
+  updated_at        DateTime            @default(now()) @updatedAt()
+  PatientsIllnesses PatientsIllnesses[]
+}
+
+model PatientsIllnesses {
+  id         String     @id @default(uuid())
+  patient    Patients?  @relation(fields: [patient_id], references: [id], onUpdate: Restrict, onDelete: Restrict)
+  patient_id String
+  illness    Illnesses? @relation(fields: [illness_id], references: [id], onUpdate: Restrict, onDelete: Restrict)
+  illness_id String
+  created_at DateTime   @default(now())
 }
