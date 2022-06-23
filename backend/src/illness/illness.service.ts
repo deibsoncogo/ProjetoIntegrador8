@@ -18,7 +18,7 @@ export class IllnessService {
   }
 
   async findIllnesses(): Promise<IllnessEntity[]> {
-    const illnesses = await this.databaseService.illnesses.findMany()
+    const illnesses = await this.databaseService.illnesses.findMany({ orderBy: { name: 'asc' } })
 
     return illnesses
   }

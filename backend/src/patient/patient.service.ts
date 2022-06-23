@@ -18,7 +18,7 @@ export class PatientService {
   }
 
   async findPatients(): Promise<PatientEntity[]> {
-    const patients = await this.databaseService.patients.findMany()
+    const patients = await this.databaseService.patients.findMany({ orderBy: { name: 'asc' } })
 
     return patients
   }
