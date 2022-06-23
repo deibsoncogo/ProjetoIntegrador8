@@ -16,6 +16,3 @@ CREATE TABLE "Patients" (
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Patients_cpf_key" ON "Patients"("cpf");
-
--- CreateIndex
-CREATE UNIQUE INDEX "Patients_rg_key" ON "Patients"("rg");

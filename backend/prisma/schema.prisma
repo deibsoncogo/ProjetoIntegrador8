@@ -12,7 +12,7 @@ model Patients {
   name       String
   birth_date String
   cpf        String   @unique
-  rg         String   @unique
+  rg         String
   telephone  String
   district   String
   city       String
