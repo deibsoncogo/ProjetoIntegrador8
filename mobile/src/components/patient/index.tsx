@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
 import { Alert, Keyboard, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import { api } from '../../services/backend'
 import { styles } from './styles'
 
 export function Patient() {
-  const [name, setName] = useState('')
-  const [birthDate, setBirthDate] = useState('')
-  const [cpf, setCpf] = useState('')
-  const [rg, setRg] = useState('')
-  const [telephone, setTelephone] = useState('')
-  const [district, setDistrict] = useState('')
+  const [name, setName] = useState('Usuário de Teste')
+  const [birthDate, setBirthDate] = useState('12/03/1990')
+  const [cpf, setCpf] = useState('147.258.369-01')
+  const [rg, setRg] = useState('96.385.274-1')
+  const [telephone, setTelephone] = useState('(11) 99988-7766')
+  const [district, setDistrict] = useState('Centro')
   const [city, setCity] = useState('Itápolis')
 
   async function savePatient() {
@@ -22,8 +21,6 @@ export function Patient() {
       return Alert.alert('Falta de informação', 'Todos campos devem estar preenchidos')
     }
 
-    await api.post('/patient', { name, birth_date: birthDate, cpf, rg, telephone, district, city })
-
     return Alert.alert('Sucesso', 'Paciente cadastrado com sucesso')
   }
 
@@ -31,7 +28,7 @@ export function Patient() {
     <View style={styles.container}>
       <Text style={styles.text}>Crie ou altere os dados de um paciente aqui</Text>
 
-      <ScrollView alwaysBounceHorizontal>
+      <ScrollView alwaysBounceHorizontal keyboardShouldPersistTaps='never'>
 
         <View style={styles.form}>
           <TextInput placeholder='Nome completo' value={name} onChangeText={setName} autoCapitalize='words' style={styles.textInput}/>
