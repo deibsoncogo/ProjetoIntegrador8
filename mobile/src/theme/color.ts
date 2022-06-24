@@ -1,9 +1,6 @@
 export const color = {
-  green: '#1B873F',
-  pink: '#FF008E',
-  orange: '#FF7A29',
-  yellow: '#FFCD1E',
-  blue: '#1292EE',
+  bluePrimary: '#1292EE',
+  blueSecondary: '#195683',
 
   whitePrimary: '#FFFFFF',
   whiteSecondary: '#F9F9F9',

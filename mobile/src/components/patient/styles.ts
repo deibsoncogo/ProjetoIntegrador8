@@ -43,6 +43,6 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     textAlignVertical: 'center',
     color: color.whitePrimary,
-    backgroundColor: color.blue,
+    backgroundColor: color.bluePrimary,
   }
 })
