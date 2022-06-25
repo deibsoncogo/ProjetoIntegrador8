@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Alert, Keyboard, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { styles } from './styles'
+import { mockPatients } from '../../database/mock'
 
 export function Illness() {
-  const [name, setName] = useState('Usuário Teste')
+  const [name, setName] = useState(mockPatients[0].name)
   const [dateFirstSymptom, setDateFirstSymptom] = useState('')
 
   async function savePatient() {

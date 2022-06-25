@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import { Alert, Keyboard, ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { styles } from './styles'
+import { mockPatients } from '../../database/mock'
 
 export function Patient() {
-  const [name, setName] = useState('Usuário de Teste')
-  const [birthDate, setBirthDate] = useState('12/03/1990')
-  const [cpf, setCpf] = useState('147.258.369-01')
-  const [rg, setRg] = useState('96.385.274-1')
-  const [telephone, setTelephone] = useState('(11) 99988-7766')
-  const [district, setDistrict] = useState('Centro')
-  const [city, setCity] = useState('Itápolis')
+  const [name, setName] = useState(mockPatients[0].name)
+  const [birthDate, setBirthDate] = useState(mockPatients[0].birthDate)
+  const [cpf, setCpf] = useState(mockPatients[0].cpf)
+  const [rg, setRg] = useState(mockPatients[0].rg)
+  const [telephone, setTelephone] = useState(mockPatients[0].telephone)
+  const [district, setDistrict] = useState(mockPatients[0].district)
+  const [city, setCity] = useState(mockPatients[0].city)
 
   async function savePatient() {
     Keyboard.dismiss()
